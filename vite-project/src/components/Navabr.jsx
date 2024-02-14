@@ -6,7 +6,7 @@ function NavBar() {
         <nav>
             <ul>
                 <li>
-                    <Link to='/about'>About</Link>
+                    <Link to='/'>About</Link>
                 </li>
                 <li>
                     <Link to='/portfolio'>Portfolio</Link>
