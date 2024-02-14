@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const Resume = () => {
+export const ResumePage = () => {
     return <div>Resume</div>;
 }
