@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'
 import NavBar from './components/Navabr.jsx'
+import Footer from './components/Footer.jsx'
 import { Route, Routes } from 'react-router-dom';
 import { AboutPage, ContactPage, PortfolioPage, ResumePage } from './pages';
 
@@ -14,6 +15,7 @@ function App() {
         <Route path='/portfolio' element={<PortfolioPage />} />
         <Route path='/resume' element={<ResumePage />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
