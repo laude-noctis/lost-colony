@@ -7,10 +7,10 @@ export const ContactPage = () => {
     const [message, setMessage] = useState('');
 
     const emailValidation = (e) => {
-        e.preventDefault();
         if (emailRegex.test(email)) {
-            setMessage('Email is valid!!');
+            setMessage('');
         } else {
+            e.preventDefault();
             setMessage('Please enter a valid email');
         }
     };
@@ -30,13 +30,13 @@ export const ContactPage = () => {
                 <div>
                     <label htmlFor="email">Email:</label>
                     <input type="email" id="email" name="email" onChange={handleOnChange} required />
+                    <p>{message}</p>
                 </div>
                 <div>
                     <label htmlFor="message">Message:</label>
                     <input type="text" id="message" name="message" required />
                 </div>
                 <button type="submit">Submit</button>
-                <p>{message}</p>
             </form>
         </div>
     );
