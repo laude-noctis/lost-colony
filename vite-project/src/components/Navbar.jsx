@@ -1,11 +1,10 @@
-import React from 'react';
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function NavBar() {
     return (
         <nav>
-            <div class='username'>
+            <div className='username'>
                 <h1>Lizzie Bumpers</h1>
                 <h2>laude-noctis</h2>
             </div>

@@ -7,8 +7,7 @@ import { AboutPage, ContactPage, PortfolioPage, ResumePage } from './pages';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
+    <div>
       <Routes>
         <Route path='/' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
@@ -16,8 +15,46 @@ function App() {
         <Route path='/resume' element={<ResumePage />} />
       </Routes>
       <Footer />
-    </div>
+    </div >
   )
 }
 
 export default App
+
+
+// import Tester from './components/TESTER.jsx';
+// import { useState, useEffect } from 'react';
+
+// function tester() {
+//   const [test, setTest] = useState(false)
+//   const [pokeInfo, setPokeInfo] = useState(false)
+
+//   useEffect(() => {
+//     fetch(" https://pokeapi.co/api/v2/pokemon?limit=151").then(res => {
+//       return res.json()
+//     }).then(data => {
+//       console.log(data.results)
+//       setTest(data.results)
+//     })
+
+
+//   }, [])
+
+//   return (
+//     <div className="App">
+//       <NavBar />
+//       {pokeInfo ? <img src={pokeInfo} /> : ""}
+
+//       {test ? test.map((element, i) => {
+//         return <Tester mops={element.name} key={i} pokeInfo={() => {
+//           fetch(element.url).then(res => {
+//             return res.json()
+//           }).then(data => {
+//             console.log(data)
+//             setPokeInfo(data.sprites.front_default)
+//           })
+//         }} />
+//       }) : ""}
+//     </div>
+//   )
+// }
