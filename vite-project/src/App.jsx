@@ -8,6 +8,7 @@ import { AboutPage, ContactPage, PortfolioPage, ResumePage } from './pages';
 function App() {
   return (
     <div>
+      <NavBar />
       <Routes>
         <Route path='/' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
@@ -42,7 +43,7 @@ export default App
 
 //   return (
 //     <div className="App">
-//       <NavBar />
+//       
 //       {pokeInfo ? <img src={pokeInfo} /> : ""}
 
 //       {test ? test.map((element, i) => {
