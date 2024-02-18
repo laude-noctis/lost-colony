@@ -10,7 +10,6 @@ export const ContactPage = () => {
         emailRegex.test(email) ? setMessage('') : e.preventDefault(), setMessage("Please enter a valid email address")
     };
 
-
     const handleOnChange = (e) => {
         setEmail(e.target.value);
     };
