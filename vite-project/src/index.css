@@ -2,10 +2,6 @@ body {
     margin: 0;
 }
 
-/* h1 {
-    margin-left: 2 rem;
-} */
-
 /* About Page */
 .about-container {
     width: 85rem;
@@ -20,10 +16,11 @@ body {
 
 /*  */
 
-/* Portfolio Page */
 h1 {
     margin-left: 2rem;
 }
+
+/* Portfolio Page */
 
 .card {
     display: flex;

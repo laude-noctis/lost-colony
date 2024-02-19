@@ -17,22 +17,24 @@ export const ContactPage = () => {
     return (
         <div>
             <h1>Contact Me</h1>
-            <form onSubmit={emailValidation}>
-                <div className="name">
-                    <label htmlFor="username">Username:</label>
-                    <input type="text" id="username" name="username" required />
-                </div>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" onChange={handleOnChange} required />
-                    <p>{message}</p>
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <input type="text" id="message" name="message" required />
-                </div>
-                <button type="submit">Submit</button>
-            </form>
+            <div className="contact-container">
+                <form onSubmit={emailValidation}>
+                    <div className="name">
+                        <label htmlFor="username">Username:</label>
+                        <input type="text" id="username" name="username" required />
+                    </div>
+                    <div>
+                        <label htmlFor="email">Email:</label>
+                        <input type="email" id="email" name="email" onChange={handleOnChange} required />
+                        <p>{message}</p>
+                    </div>
+                    <div>
+                        <label htmlFor="message">Message:</label>
+                        <input type="text" id="message" name="message" required />
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     );
 };
