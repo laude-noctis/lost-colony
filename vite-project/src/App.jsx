@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
-import NavBar from './components/Navbar.jsx'
-import Footer from './components/Footer.jsx'
+import NavBar from './components/NavBar/Navbar.jsx'
+import Footer from './components/Footer/Footer.jsx'
 import { Route, Routes } from 'react-router-dom';
 import { AboutPage, ContactPage, PortfolioPage, ResumePage } from './pages';
 
