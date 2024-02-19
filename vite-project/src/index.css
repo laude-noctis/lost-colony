@@ -1,4 +1,8 @@
 /* Portfolio Page */
+.card {
+    display: inline-block;
+    flex-direction: column;
+}
 .port-card {
     border: 3px red solid;
     display: flex;
