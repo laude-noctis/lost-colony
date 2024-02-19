@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 /* Portfolio Page */
 .card {
     display: flex;
@@ -6,17 +10,20 @@
 }
 
 .port-card {
-    border: 3px red solid;
+    border: 3px black solid;
+    border-radius: 1rem;
     display: flex;
     align-items: flex-start;
     height: 15rem;
     width: 30rem;
     padding: 0.5rem;
+    
 }
 
 .port-icon {
     font-size: 2.5rem;
     margin: 0 0.5rem;
+    color: black;
 }
 
 .port-title {
@@ -27,6 +34,7 @@
 .port-card a {
     text-decoration: none;
     opacity: 0.75;
+    color: black;
 }
 
 .port-card a:hover,
