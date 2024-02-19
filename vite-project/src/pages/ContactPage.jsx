@@ -16,7 +16,7 @@ export const ContactPage = () => {
 
     return (
         <div>
-            <div>Contact Me!</div>
+            <h1>Contact Me</h1>
             <form onSubmit={emailValidation}>
                 <div className="name">
                     <label htmlFor="username">Username:</label>

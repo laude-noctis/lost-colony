@@ -2,7 +2,7 @@ import React from 'react';
 
 export const ResumePage = () => {
     return <div>
-        <h2>Resume</h2>
+        <h1>Resume</h1>
         <h4>Download my Resume</h4>
         <div>
             <h3>Front-End</h3>

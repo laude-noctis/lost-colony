@@ -27,7 +27,7 @@ const crazyGadget = {
 
 export const PortfolioPage = () => {
     return (
-        <div>
+        <div className="portfolio">
             <h1>Portfolio</h1>
             <div className="card-container">
                 <Card code={eternalEngine.code} webpage={eternalEngine.webpage} title={eternalEngine.title} />

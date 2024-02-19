@@ -2,7 +2,29 @@ body {
     margin: 0;
 }
 
+/* h1 {
+    margin-left: 2 rem;
+} */
+
+/* About Page */
+.about-container {
+    width: 85rem;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.about-container p {
+    font-size: 1.25rem;
+}
+
+/*  */
+
 /* Portfolio Page */
+h1 {
+    margin-left: 2rem;
+}
+
 .card {
     display: flex;
     flex-direction: row;
@@ -17,7 +39,6 @@ body {
     height: 15rem;
     width: 30rem;
     padding: 0.5rem;
-    
 }
 
 .port-icon {
