@@ -1,0 +1,30 @@
+/* Portfolio Page */
+.port-card {
+    border: 3px red solid;
+    display: flex;
+    align-items: flex-start;
+    height: 15rem;
+    width: 30rem;
+    padding: 0.5rem;
+}
+
+.port-icon {
+    font-size: 2.5rem;
+    margin: 0 0.5rem;
+}
+
+.port-title {
+    margin: 0 0.5rem;
+    font-size: 2rem;
+}
+
+.port-card a {
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.port-card a:hover,
+.port-icon:hover {
+    color: gray;
+}
+/*  */
