@@ -29,10 +29,12 @@ export const PortfolioPage = () => {
     return (
         <div>
             <h1>Portfolio</h1>
-             <Card code={eternalEngine.code} webpage={eternalEngine.webpage} title={eternalEngine.title} />
-             <Card code={Atmosphoria.code} webpage={Atmosphoria.webpage} title={Atmosphoria.title} />
-             <Card code={whiteJungle.code} webpage={whiteJungle.webpage} title={whiteJungle.title} />
-             <Card code={crazyGadget.code} webpage={crazyGadget.webpage} title={crazyGadget.title} />
+            <div className="card-container">
+                <Card code={eternalEngine.code} webpage={eternalEngine.webpage} title={eternalEngine.title} />
+                <Card code={Atmosphoria.code} webpage={Atmosphoria.webpage} title={Atmosphoria.title} />
+                <Card code={whiteJungle.code} webpage={whiteJungle.webpage} title={whiteJungle.title} />
+                <Card code={crazyGadget.code} webpage={crazyGadget.webpage} title={crazyGadget.title} />
+            </div>
         </div>
     );
 }

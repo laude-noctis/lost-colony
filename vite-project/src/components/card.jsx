@@ -1,6 +1,5 @@
 export default function Card(props) {
     return (
-        <div className="container">
             <div className="card">
                 <div className="port-card">
                     <a href={props.code} target="_blank">
@@ -11,6 +10,5 @@ export default function Card(props) {
                     </h2>
                 </div>
             </div>
-        </div>
     )
 }
