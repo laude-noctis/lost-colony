@@ -4,12 +4,10 @@ const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.(com|net|org|gov|edu)$/;
 
 export const ContactPage = () => {
     const [email, setEmail] = useState('');
-    const [emailValid, setEmailValid] = useState(true);
     const [message, setMessage] = useState('');
 
     const emailValidation = () => {
         const isValid = emailRegex.test(email);
-        setEmailValid(isValid);
         setMessage(isValid ? 'Email Address is Valid!' : 'Please enter a valid email address');
     };
 
@@ -35,7 +33,7 @@ export const ContactPage = () => {
                         <label htmlFor="message">Message:</label>
                         <textarea id="message" name="message" required />
                     </div>
-                        <p style={{ color: emailValid ? 'green' : 'red' }}>{message}</p> {/* Display feedback */}
+                        <p onChange={emailValidation}>{message}</p>
                     <button type="submit">Submit</button>
                 </form>
             </div>
