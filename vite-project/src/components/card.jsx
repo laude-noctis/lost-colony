@@ -1,7 +1,7 @@
 export default function Card(props) {
     return (
             <div className="card">
-                <div className="port-card">
+                <div className="port-card" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
                     <a href={props.code} target="_blank">
                         <i className="fab fa-github icon port-icon"></i>
                     </a>

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.(com|net|org|gov|edu)$/;
 
 export const ContactPage = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-
+    
+    const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.(com|net|org|gov|edu)$/;
     const emailValidation = () => {
         const isValid = emailRegex.test(email);
         setMessage(isValid ? 'Email Address is Valid!' : 'Please enter a valid email address');
@@ -33,7 +33,7 @@ export const ContactPage = () => {
                         <label htmlFor="message">Message:</label>
                         <textarea id="message" name="message" required />
                     </div>
-                        <p onChange={emailValidation}>{message}</p>
+                        <p>{message}</p>
                     <button type="submit">Submit</button>
                 </form>
             </div>
