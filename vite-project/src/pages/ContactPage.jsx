@@ -3,22 +3,22 @@ import React, { useEffect, useState } from 'react';
 
 export const ContactPage = () => {
     const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('false');
+    const [message, setMessage] = useState('');
     
     useEffect(() => {
-        const message = (email) => {
-            const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-            return emailRegex.test(email)
+        const validateEmail = (email) => {
+            const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.(com|net|org|edu|gov)$/;
+            return emailRegex.test(email);
         };
 
         if (email.trim() === '') {
-            setMessage('Email is Required')
-        } else if (!!message(email)) {
-            setMessage('Please enter a valid email')
+            setMessage('');
+        } else if (!validateEmail(email)) {
+            setMessage('Please enter a valid email');
         } else {
-            setMessage('')
+            setMessage('');
         }
-    }, [email])
+    }, [email]);
 
     return (
         <div>
