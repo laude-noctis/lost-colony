@@ -6,13 +6,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Cambria", "Cochin", Georgia, Times, 'Times New Roman', serif;
-    background-color: lightgrey;
+    background-color: #495867;
     padding: 1.5rem;
 }
 
 nav h1 {
     margin: 0;
+    color: white;
+}
+
+nav h2 {
+    color: white;
 }
 
 nav .username {
@@ -40,10 +44,10 @@ nav ul li .nav-link {
 }
 
 .active {
-    background-color: darkcyan;
+    background-color: #c18c5d;
     color: white;
 }
 
 nav ul li a:not(.active):hover {
-    background-color: salmon;
+    background-color: #ce798b;
 }
