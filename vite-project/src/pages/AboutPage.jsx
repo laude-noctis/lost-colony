@@ -4,8 +4,10 @@ import me from '../images/me.jpeg'
 export const AboutPage = () => {
     return <div>
         <div className='title'>
+            <div className="image-container">
+                <img src={me} alt="Lizzie Bumpers" className="circular-image" />
+            </div>
             <h1>About me</h1>
-            <img src={me} alt="Lizzie Bumpers" />
         </div>
 
         <div className="about-container">
