@@ -1,6 +1,0 @@
-import eternalEngineImage from './eternal-engine.png'
-import atmosphoriaImage from './atmosphoria.png'
-import whiteJungleImage from './white-jungle.png'
-import crazyGadgetImage from './crazy-gadget.png'
-import securityHallImage from './security-hall.png'
-import greenForestImage from './green-forest.png'
