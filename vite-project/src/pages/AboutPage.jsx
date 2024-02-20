@@ -1,8 +1,13 @@
 import React from 'react';
+import me from '../images/me.jpeg'
 
 export const AboutPage = () => {
     return <div>
-        <h1>About me</h1>
+        <div className='title'>
+            <h1>About me</h1>
+            <img src={me} alt="Lizzie Bumpers" />
+        </div>
+
         <div className="about-container">
             <p>Howdy, my name is Lizzie Bumpers and I am currently studying to become a Full-Stack-Developer.
                 Throughtout my time studying, I have enjoyed working on the back-end side. I liked working on the api routing and the server side code.
