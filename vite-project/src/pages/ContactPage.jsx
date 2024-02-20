@@ -1,20 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 export const ContactPage = () => {
     const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState('false');
     
-    const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.(com|net|org|gov|edu)$/;
-    const emailValidation = () => {
-        const isValid = emailRegex.test(email);
-        setMessage(isValid ? 'Email Address is Valid!' : 'Please enter a valid email address');
-    };
+    useEffect(() => {
+        const message = (email) => {
+            const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+            return emailRegex.test(email)
+        };
 
-    const handleOnChange = (e) => {
-        setEmail(e.target.value);
-        emailValidation();
-    };
+        if (email.trim() === '') {
+            setMessage('Email is Required')
+        } else if (!!message(email)) {
+            setMessage('Please enter a valid email')
+        } else {
+            setMessage('')
+        }
+    }, [email])
 
     return (
         <div>
@@ -27,7 +31,7 @@ export const ContactPage = () => {
                     </div>
                     <div>
                         <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" name="email" onChange={handleOnChange} required />
+                        <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                     </div>
                     <div>
                         <label htmlFor="message">Message:</label>
