@@ -1,24 +1,28 @@
 import React, { useState } from 'react';
 
-const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.(com|net|org|gov|edu)$/;
 
 export const ContactPage = () => {
     const [email, setEmail] = useState('');
+    const [emailValid, setEmailValid] = useState(true);
     const [message, setMessage] = useState('');
 
-    const emailValidation = (e) => {
-        emailRegex.test(email) ? setMessage('') : e.preventDefault(), setMessage("Please enter a valid email address")
+    const emailValidation = () => {
+        const isValid = emailRegex.test(email);
+        setEmailValid(isValid);
+        setMessage(isValid ? 'Email Address is Valid!' : 'Please enter a valid email address');
     };
 
     const handleOnChange = (e) => {
         setEmail(e.target.value);
+        emailValidation();
     };
 
     return (
         <div>
             <h1>Contact Me</h1>
             <div className="contact-container">
-                <form onSubmit={emailValidation}>
+                <form>
                     <div className="name">
                         <label htmlFor="username">Username:</label>
                         <input type="text" id="username" name="username" required />
@@ -26,12 +30,12 @@ export const ContactPage = () => {
                     <div>
                         <label htmlFor="email">Email:</label>
                         <input type="email" id="email" name="email" onChange={handleOnChange} required />
-                        <p>{message}</p>
                     </div>
                     <div>
                         <label htmlFor="message">Message:</label>
-                        <input type="text" id="message" name="message" required />
+                        <textarea id="message" name="message" required />
                     </div>
+                        <p style={{ color: emailValid ? 'green' : 'red' }}>{message}</p> {/* Display feedback */}
                     <button type="submit">Submit</button>
                 </form>
             </div>
