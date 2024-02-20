@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import NavBar from './components/NavBar/Navbar.jsx'
+import Header from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import { Route, Routes } from 'react-router-dom';
 import { AboutPage, ContactPage, PortfolioPage, ResumePage } from './pages';
@@ -8,7 +8,7 @@ import { AboutPage, ContactPage, PortfolioPage, ResumePage } from './pages';
 function App() {
   return (
     <div>
-      <NavBar />
+      <Header />
       <Routes>
         <Route path='/' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
