@@ -1,11 +1,12 @@
 import React from 'react';
 import Card from '../components/card';
+import eternalEngineImage from '../images/eternal-engine.png'
 
 const eternalEngine = {
     code: "https://github.com/laude-noctis/eternal-engine",
     webpage: "https://eternal-engine-f89c83326069.herokuapp.com/",
     title: "Eternal-Engine",
-    backgroundImage: "./images/eternal-engine.png"
+    backgroundImage: eternalEngineImage
 }
 
 const Atmosphoria = {
@@ -48,20 +49,13 @@ export const PortfolioPage = () => {
         <div className="portfolio">
             <h1>Portfolio</h1>
             <div className="card-container">
-                <Card code={eternalEngine.code} webpage={eternalEngine.webpage} title={eternalEngine.title} style={{ backgroundImage: eternalEngine.backgroundImage }}/>
-                <Card code={Atmosphoria.code} webpage={Atmosphoria.webpage} title={Atmosphoria.title} style={{ backgroundImage: Atmosphoria.backgroundImage }}/>
-                <Card code={whiteJungle.code} webpage={whiteJungle.webpage} title={whiteJungle.title} style={{ backgroundImage: whiteJungle.backgroundImage }}/>
-                <Card code={crazyGadget.code} webpage={crazyGadget.webpage} title={crazyGadget.title} style={{ backgroundImage: crazyGadget.backgroundImage }}/>
-                <Card code={greenForest.code} webpage={greenForest.webpage} title={greenForest.title} style={{ backgroundImage: greenForest.backgroundImage }}/>
-                <Card code={securityHall.code} webpage={securityHall.webpage} title={securityHall.title} style={{ backgroundImage: securityHall.backgroundImage }} />
+                <Card code={eternalEngine.code} webpage={eternalEngine.webpage} title={eternalEngine.title} backgroundImage={eternalEngine.backgroundImage}/>
+                <Card code={Atmosphoria.code} webpage={Atmosphoria.webpage} title={Atmosphoria.title} backgroundImage={eternalEngine.backgroundImage}/>
+                <Card code={whiteJungle.code} webpage={whiteJungle.webpage} title={whiteJungle.title} backgroundImage={eternalEngine.backgroundImage}/>
+                <Card code={crazyGadget.code} webpage={crazyGadget.webpage} title={crazyGadget.title} backgroundImage={eternalEngine.backgroundImage}/>
+                <Card code={greenForest.code} webpage={greenForest.webpage} title={greenForest.title} backgroundImage={eternalEngine.backgroundImage}/>
+                <Card code={securityHall.code} webpage={securityHall.webpage} title={securityHall.title} backgroundImage={eternalEngine.backgroundImage}/>
             </div>
         </div>
     );
 }
-// sName="card-container">
-//                 <Card code={eternalEngine.code} webpage={eternalEngine.webpage} title={eternalEngine.title} style={{ backgroundImage: eternalEngine.backgroundImage }} />
-//                 <Card code={Atmosphoria.code} webpage={Atmosphoria.webpage} title={Atmosphoria.title} style={{ backgroundImage: Atmosphoria.backgroundImage }} />
-//                 {/* Render other cards with respective background Images */}
-//             </div>
-//         </div>
-//     );
