@@ -36,6 +36,9 @@ h1 {
     height: 15rem;
     width: 30rem;
     padding: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .port-icon {
