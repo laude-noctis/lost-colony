@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 export const ContactPage = () => {
     const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('false');
+    const [message, setMessage] = useState('');
     
     useEffect(() => {
         const validateEmail = (email) => {
@@ -20,7 +20,7 @@ export const ContactPage = () => {
         }
     }, [email]);
 
-    const handleBlur = () => {
+    const handleBlur = (e) => {
         const { name, value } = e.target;
         
         if (name === 'username' && value.trim() === '') {
