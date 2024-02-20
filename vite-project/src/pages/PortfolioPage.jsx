@@ -25,6 +25,18 @@ const crazyGadget = {
     title: "Crazy-Gadget",
 }
 
+const greenForest = {
+    code: "https://github.com/laude-noctis/green-forest",
+    webpage: "https://laude-noctis.github.io/green-forest/",
+    title: "Green-Forest",
+}
+
+const securityHall = {
+    code: "https://github.com/laude-noctis/security-hall",
+    webpage: "https://laude-noctis.github.io/security-hall/",
+    title: "Security-Hall",
+}
+
 export const PortfolioPage = () => {
     return (
         <div className="portfolio">
@@ -34,6 +46,8 @@ export const PortfolioPage = () => {
                 <Card code={Atmosphoria.code} webpage={Atmosphoria.webpage} title={Atmosphoria.title} />
                 <Card code={whiteJungle.code} webpage={whiteJungle.webpage} title={whiteJungle.title} />
                 <Card code={crazyGadget.code} webpage={crazyGadget.webpage} title={crazyGadget.title} />
+                <Card code={greenForest.code} webpage={greenForest.webpage} title={greenForest.title} />
+                <Card code={securityHall.code} webpage={securityHall.webpage} title={securityHall.title} />
             </div>
         </div>
     );
