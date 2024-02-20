@@ -27,30 +27,32 @@ export const ContactPage = () => {
             setMessage('Username is required');
         } else if (name === 'message' && value.trim() === '') {
             setMessage('Message is required');
+        } else if (name === 'email' && value.trim() === '') {
+            setMessage('Email is required');
         } else {
-            setMessage('');
+            setMessage('')
         }
     };
     
     return (
-        <div>
+        <div className='container'>
             <h1>Contact Me</h1>
-            <div className="contact-container">
+            <div className="contact-form">
                 <form>
-                    <div className="name">
+                    <div className="name box">
                         <label htmlFor="username">Username:</label>
                         <input type="text" id="username" name="username" onBlur={handleBlur} required />
                     </div>
-                    <div>
+                    <div className="email box">
                         <label htmlFor="email">Email:</label>
                         <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} onBlur={handleBlur} required />
                     </div>
-                    <div>
+                    <div className="message box">
                         <label htmlFor="message">Message:</label>
-                        <textarea id="message" name="message" onBlur={handleBlur} required />
+                        <input id="message" name="message" onBlur={handleBlur} required />
                     </div>
                         <p>{message}</p>
-                    <button type="submit">Submit</button>
+                    <button className='submit-btn' type="submit">Submit</button>
                 </form>
             </div>
         </div>

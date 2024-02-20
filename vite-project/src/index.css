@@ -29,10 +29,11 @@ h1 {
 }
 
 .port-card {
+    display: flex;
     border: 3px black solid;
     border-radius: 1rem;
-    display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     height: 15rem;
     width: 30rem;
     padding: 0.5rem;
@@ -73,9 +74,40 @@ h1 {
 /*  */
 
 /* Contact Page */
+.contact-form {
+    /* border: 3px crimson solid; */
+    display: flex;
+    justify-content: center;
+    width: 50rem;
+    height: 50rem;
+}
+
+.box {
+    margin-bottom: 1rem;
+}
+
+.container label {
+    display: flex;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
 input {
-    height: 16px;
-    width: 16rem;
+    height: 1.45rem;
+    width: 20rem;
+    border-radius: 0.5rem
+}
+
+#message {
+    height: 11rem;
+    width: 20rem;
+    border-radius: 0.5rem
+}
+
+.submit-btn {
+    width: 20.5rem;
+    border-radius: 0.5rem;
+    height: 2rem;
 }
 
 /*  */
