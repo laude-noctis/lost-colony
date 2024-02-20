@@ -6,7 +6,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #495867;
+    background-color: #798071;
     padding: 1.5rem;
 }
 
@@ -44,10 +44,10 @@ nav ul li .nav-link {
 }
 
 .active {
-    background-color: #c18c5d;
+    background-color: #3a435e;
     color: white;
 }
 
 nav ul li a:not(.active):hover {
-    background-color: #ce798b;
+    background-color: #999ac6;
 }

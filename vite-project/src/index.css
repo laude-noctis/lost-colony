@@ -1,15 +1,15 @@
 body {
     margin: 0;
-    background: var(--desert-sand);
+    background: var(--alabaster);
     font-family: "Cambria", "Cochin", Georgia, Times, 'Times New Roman', serif;
 }
 
 :root {
-    --desert-sand: #ecc8af;
-    --melon: #e7ad99;
-    --old-rose: #ce798b;
-    --persian-orange: #c18c5d;
-    --paynes-gray: #495867;
+    --alabaster: #e8ebe4;
+    --french-gray: #d2d5dd;
+    --bluegray: #3a435e;
+    --cool-gray: #999ac6;
+    --battleship: #798071;
 }
 
 /* About Page */
@@ -43,7 +43,7 @@ h1 {
     border: 3px black solid;
     border-radius: 1rem;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-start;
     height: 15rem;
     width: 30rem;
     padding: 0.5rem;
@@ -55,7 +55,7 @@ h1 {
 .port-icon {
     font-size: 3rem;
     margin: 0 0.5rem;
-    color: var(--old-rose);
+    color: var(--battleship);
     -webkit-text-stroke: 2px black;
 }
 
@@ -66,13 +66,13 @@ h1 {
 
 .port-card a {
     text-decoration: none;
-    color: var(--old-rose);
+    color: var(--battleship);
     -webkit-text-stroke: 2px black;
 }
 
 .port-card a:hover,
 .port-icon:hover {
-    color: var(--melon);
+    color: var(--bluegray);
 }
 
 .card-container {
@@ -87,7 +87,6 @@ h1 {
 
 /* Contact Page */
 .contact-form {
-    /* border: 3px crimson solid; */
     display: flex;
     justify-content: center;
     width: 50rem;
@@ -120,11 +119,11 @@ input {
     width: 20.5rem;
     border-radius: 0.5rem;
     height: 2rem;
-    background-color: var(--old-rose)
+    background-color: var(--french)
 }
 
 .submit-btn:hover {
-    color: var(--paynes-gray);
+    color: var(--battleship);
     cursor: pointer;
 }
 

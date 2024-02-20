@@ -5,7 +5,7 @@
     height: 10%;
     left: 0;
     right: 0;
-    background-color: #495867;
+    background-color: #798071;
     justify-content: center;
     align-items: center;
 }
@@ -16,5 +16,5 @@
 }
 
 .footer .icon:hover {
-    color: #c18c5d;
+    color: #999ac6;
 }
