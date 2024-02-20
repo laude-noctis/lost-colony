@@ -4,7 +4,7 @@ export const ResumePage = () => {
     return <div>
         <h1>Resume</h1>
         <div className="resume-container">
-            <h4>Download my Resume</h4>
+            <h3>Download my Resume</h3>
             <h4>Resume</h4>
             <div>
                 <h3>Front-End</h3>
