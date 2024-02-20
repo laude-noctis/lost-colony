@@ -138,11 +138,13 @@ input {
     width: 20.5rem;
     border-radius: 0.5rem;
     height: 2rem;
-    background-color: var(--french)
+    background-color: var(--bluegray);
+    color: white;
 }
 
 .submit-btn:hover {
-    color: var(--battleship);
+    color: black;
+    background-color: var(--cool-gray);
     cursor: pointer;
 }
 
