@@ -1,5 +1,5 @@
 import React from 'react';
-const PDF = 'http://localhost:5173/resume/Resume.pdf';
+const PDF = 'http://localhost:5173/public/Resume.pdf';
 
 export const ResumePage = () => {
     const downloadFileAtUrl = (url) => {
