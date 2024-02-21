@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePDF from '../resume.pdf';
+import resumePDF from '../Resume.pdf';
 
 export const ResumePage = () => {
     return <div>
