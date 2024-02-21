@@ -1,15 +1,21 @@
 # Lost-Colony
-This webpage is created to act as a resume using reactjs. It includes an About Me, Portfolio, Contact Me, and Resume sections.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This webpage is created to act as a resume using reactjs. It is used to show some of my works and to be able to contact me. There is a section depicting my proficiencies in coding alongside my profession resume in which you can download.  
 
-Currently, two official plugins are available:
+Vite was used to build the server.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Webpage
 
-## APIs
-Font Awesome for Icons
+
+## APIs and NPMs
+[Font Awesome for Icons](https://cdnjs.com/libraries/font-awesome)  
+[Vite](https://www.npmjs.com/package/vite)  
+[React](https://www.npmjs.com/package/react) (Including the react-dom and react-router-dom)    
+[Eslint](https://www.npmjs.com/package/eslint)
 
 ## Credits
-Navbar help - https://www.youtube.com/watch?v=17l6AOc8s10&t=329s 
+[Navbar Help](https://www.youtube.com/watch?v=17l6AOc8s10&t=329s)  
+
+## Screenshot
+![photo of webpage](./src/images/screenshot.png)

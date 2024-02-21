@@ -9,7 +9,6 @@ body {
 
 :root {
     --alabaster: #e8ebe4;
-    --french-gray: #d2d5dd;
     --bluegray: #3a435e;
     --cool-gray: #999ac6;
     --battleship: #798071;
@@ -104,7 +103,8 @@ h1 {
     justify-content: center;
     margin: 0 auto;
     min-height: 100vh;
-} 
+}
+
 /*  */
 
 /* Contact Page */
