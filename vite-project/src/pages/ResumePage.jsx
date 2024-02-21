@@ -6,7 +6,7 @@ export const ResumePage = () => {
         <h1>Resume</h1>
         <div className="resume-container">
             <h3>Download my Resume</h3>
-            <h4><a href={resumePDF} download="Bumpers, Resume" target="_blank" rel="noopener noreferrer"><button>Resume</button></a></h4>
+            <h4><a href={resumePDF} download="Bumpers, Resume" target="_blank" rel="noopener noreferrer"><button className='resume-btn'>Resume</button></a></h4>
             <div>
                 <h3>Front-End Proficiencies</h3>
                 <ul>

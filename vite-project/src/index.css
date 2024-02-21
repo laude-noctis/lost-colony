@@ -163,5 +163,16 @@ input {
     font-size: 1.5rem;
 }
 
+.resume-btn {
+    border: none;
+    background: var(--alabaster);
+    font-weight: bold;
+    color: var(--bluegray)
+}
+
+.resume-btn:hover {
+    color: var(--cool-gray);
+    cursor: pointer;
+}
 
 /*  */
