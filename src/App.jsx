@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import { Route, Routes } from 'react-router-dom';
-import { AboutPage, ContactPage, PortfolioPage, ResumePage } from './pages';
+import { AboutPage, ContactPage, PortfolioPage, ResumePage } from './pages/index.js';
 
 function App() {
   return (
