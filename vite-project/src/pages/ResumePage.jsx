@@ -1,11 +1,21 @@
 import React from 'react';
 
 export const ResumePage = () => {
+    const onButtonClick = () => {
+        const pdfUrl = "resume.pdf";
+        const link = document.createElement('a')
+        link.href = pdfUrl;
+        link.download = 'resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     return <div>
         <h1>Resume</h1>
         <div className="resume-container">
             <h3>Download my Resume</h3>
-            <h4>Resume</h4>
+            <h4><button onClick={onButtonClick}>Resume</button></h4>
             <div>
                 <h3>Front-End Proficiencies</h3>
                 <ul>
