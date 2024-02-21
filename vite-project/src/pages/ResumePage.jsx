@@ -1,22 +1,12 @@
 import React from 'react';
-const PDF = 'http://localhost:5173/public/Resume.pdf';
+import resumePDF from '../resume.pdf';
 
 export const ResumePage = () => {
-    const downloadFileAtUrl = (url) => {
-        const fileName = 'resume.pdf'
-        const aTag = document.createElement('a')
-        aTag.href = url
-        aTag.setAttribute("download", fileName);
-        document.body.appendChild(aTag);
-        aTag.click();
-        aTag.remove();
-    }
-
     return <div>
         <h1>Resume</h1>
         <div className="resume-container">
             <h3>Download my Resume</h3>
-            <h4><button onClick={() => { downloadFileAtUrl(PDF)}}>Resume</button></h4>
+            <h4><a href={resumePDF} download="Bumpers, Resume" target="_blank" rel="noopener noreferrer"><button>Resume</button></a></h4>
             <div>
                 <h3>Front-End Proficiencies</h3>
                 <ul>

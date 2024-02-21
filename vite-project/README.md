@@ -1,4 +1,5 @@
-# React + Vite
+# Lost-Colony
+This webpage is created to act as a resume using reactjs. It includes an About Me, Portfolio, Contact Me, and Resume sections.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
