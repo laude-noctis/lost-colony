@@ -20,7 +20,7 @@ body {
     width: 85rem;
     justify-content: center;
     margin: 0 auto;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 .title {
@@ -112,7 +112,7 @@ h1 {
     display: flex;
     justify-content: center;
     width: 50rem;
-    height: 50rem;
+    height: 41rem;
 }
 
 .box {
@@ -156,6 +156,7 @@ input {
 /* Resume Page */
 .resume-container {
     margin-left: 5rem;
+    height: 40.5rem;
 }
 
 .resume-container h3 {

@@ -7,7 +7,7 @@ export const ResumePage = () => {
             <h3>Download my Resume</h3>
             <h4>Resume</h4>
             <div>
-                <h3>Front-End</h3>
+                <h3>Front-End Proficiencies</h3>
                 <ul>
                     <li>HTMl</li>
                     <li>CSS</li>
@@ -16,7 +16,7 @@ export const ResumePage = () => {
                     <li>React</li>
                     <li>BootStrap</li>
                 </ul>
-                <h3>Back-End</h3>
+                <h3>Back-End Proficiencies</h3>
                 <ul>
                     <li>APIs</li>
                     <li>Node.js</li>
