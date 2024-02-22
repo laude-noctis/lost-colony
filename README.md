@@ -6,7 +6,7 @@ This webpage is created to act as a resume using reactjs. It is used to show som
 Vite was used to build the server.
 
 ## Live Webpage
-
+https://main--bumpersresume.netlify.app/  
 
 ## APIs and NPMs
 [Font Awesome for Icons](https://cdnjs.com/libraries/font-awesome)  
