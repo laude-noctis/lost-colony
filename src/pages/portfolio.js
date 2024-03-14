@@ -4,6 +4,7 @@ import whiteJungleImage from '../images/white-jungle.png'
 import crazyGadgetImage from '../images/crazy-gadget.png'
 import securityHallImage from '../images/security-hall.png'
 import greenForestImage from '../images/green-forest.png'
+import loveStruckImage from '../images/loveStruck.png'
 
 const eternalEngine = {
     code: "https://github.com/laude-noctis/radical-highway",
@@ -47,11 +48,19 @@ const securityHall = {
     backgroundImage: securityHallImage
 }
 
+const loveStruck = {
+    code: 'https://github.com/devinshade/lovestruck',
+    webpage: 'https://lovestruck.onrender.com/',
+    title: 'loveStruck',
+    backgroundImage: loveStruckImage,
+}
+
 export {
     eternalEngine,
     whiteJungle,
     radicalHighway,
     securityHall,
     crazyGadget,
-    greenForest
+    greenForest,
+    loveStruck
 }
