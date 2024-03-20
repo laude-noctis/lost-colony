@@ -6,18 +6,18 @@ import securityHallImage from '../images/security-hall.png'
 import greenForestImage from '../images/green-forest.png'
 import loveStruckImage from '../images/loveStruck.png'
 
-const eternalEngine = {
+const radicalHighway = {
     code: "https://github.com/laude-noctis/radical-highway",
     webpage: "https://laude-noctis.github.io/radical-highway/",
-    title: "Eternal-Engine",
-    backgroundImage: eternalEngineImage
-}
-
-const radicalHighway = {
-    code: "https://github.com/alexilson/atmosphoria",
-    webpage: "https://alexilson.github.io/atmosphoria/",
     title: "Radical-Highway",
     backgroundImage: radicalHighwayImage
+}
+
+const eternalEngine = {
+    code: "https://github.com/laude-noctis/eternal-engine",
+    webpage: "https://eternal-engine-f89c83326069.herokuapp.com/",
+    title: "Eternal-Engine",
+    backgroundImage: eternalEngineImage
 }
 
 const whiteJungle = {
